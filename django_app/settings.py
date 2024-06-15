@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'posts',
     'cloudinary',
     'corsheaders',
-    'whotenoise',
+    'whitenoise',
 ]
 
 MIDDLEWARE = [
