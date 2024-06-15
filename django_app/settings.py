@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'posts',
     'cloudinary',
     'corsheaders',
+    'whotenoise',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'django_app.urls'
@@ -141,9 +143,9 @@ STATICFILES_DIRS = [
 
 
 cloudinary.config( 
-  cloud_name = "dkbnxsdyt", 
-  api_key = "299613539561537", 
-  api_secret = "DKNha8XMT0NSunM9l18fgNdIJbo" 
+  cloud_name = "dlgj1ntas", 
+  api_key = "952564529871921", 
+  api_secret = "48gnAbwcZWmyQBOOvAxICG12_-8" 
 )
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

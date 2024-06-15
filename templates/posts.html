@@ -2,15 +2,15 @@
 <section class="content">
     <div class="logodiv">
         <img src="{% static 'img-user/twitter.png' %}" alt="" class="twitterlog"/>
-        <h1>Home</h1>
+        <h1 style="color: white;font-size: 30px;">Home</h1>
     </div>
     
     <section class="post_form">
         <form action="" method="POST"  enctype="multipart/form-data">
             {% csrf_token %}
-            <input style="background-color: #d3ea92;" type="text" name="name" placeholder="Your Name" required />
-            <textarea type="text" style="background-color: #d3ea92;" name="body" placeholder="What's happening?" required></textarea>
-            <input type="file" name="image">
+            <input style="background-color: #ffffff;" type="text" name="name" placeholder="Your Name" required />
+            <textarea type="text" style="background-color: #ffffff;" name="body" placeholder="What's happening?" required></textarea>
+            <input type="file" name="image" style="background-color: white;">
             <input type="submit" name="" id="" value="Tweet" />
         </form>
     </section>
@@ -18,13 +18,13 @@
         <ul>
             {% for post in posts %}
             <li>
-                <img class="menu_icon js-menu-icon" src="{% static 'img-user/menu.png' %}" />
+                <img class="menu_icon js-menu-icon" src="{% static 'img-user/menus.png' %}" />
                 <div class="menu">
                     <a href="/delete/{{ post.id }} ">Delete</a> <br>
                     <a href="/edit/{{ post.id }} ">Edit</a>
                 </div>
                 <div class="logo">
-                    <img src="{% static 'img-user/images.png' %} " />
+                    <img src="{% static 'img-user/image.png' %}" alt=""/>
                 </div>
                 <div class="name_body">
                     <div class="name">{{ post.name }}</div>
